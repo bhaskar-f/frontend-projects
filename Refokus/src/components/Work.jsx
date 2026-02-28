@@ -60,9 +60,9 @@ export default function Work() {
   });
 
   return (
-    <div className="w-full">
-      <div className="relative max-w-screen-xl mx-auto  text-center text-white">
-        <h1 className="text-[30vw] leading-none font-medium select-none tracking-tight">
+    <div className="w-full px-4">
+      <div className="relative max-w-screen-xl mx-auto text-center text-white">
+        <h1 className="text-5xl md:text-7xl lg:text-[30vw] leading-none font-medium select-none tracking-tight">
           work
         </h1>
 
@@ -74,7 +74,7 @@ export default function Work() {
                   key={index}
                   src={elem.url}
                   alt="Girl in a jacket"
-                  className="absolute w-52 h-52 rounded-lg -translate-x-[50%] -translate-y-[50%]"
+                  className="absolute w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 rounded-lg -translate-x-[50%] -translate-y-[50%]"
                   style={{ top: elem.top, left: elem.left }}
                 />
               )

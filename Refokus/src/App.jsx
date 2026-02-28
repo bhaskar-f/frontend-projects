@@ -14,7 +14,7 @@ export default function App() {
   const scroll = new LocomotiveScroll();
 
   return (
-    <div className="w-full min-h-screen bg-zinc-900 overflow-hidden">
+    <div className="w-full min-h-screen bg-zinc-900 overflow-x-hidden">
       <CustomCursor />
       <Nav />
       <Work />

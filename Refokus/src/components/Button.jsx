@@ -7,7 +7,7 @@ export default function Button({ title = "GetStarted" }) {
       initial="rest"
       whileHover="hover"
       animate="rest"
-      className="relative min-w-40 h-11 bg-zinc-100 px-4 py-2 text-black rounded-full flex items-center justify-between overflow-hidden"
+      className="relative min-w-32 md:min-w-40 h-10 md:h-11 bg-zinc-100 px-3 md:px-4 py-2 text-black text-sm md:text-base rounded-full flex items-center justify-between overflow-hidden"
     >
       <motion.span
         variants={{

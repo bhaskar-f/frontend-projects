@@ -1,2 +1,19 @@
 @import "tailwindcss";
 /* @import "locomotive-scroll/dist/locomotive-scroll.css"; */
+
+/* Responsive typography improvements */
+@layer components {
+  @media (max-width: 640px) {
+    body {
+      @apply text-sm;
+    }
+  }
+
+  /* Optimize touch targets for mobile */
+  @media (max-width: 768px) {
+    a,
+    button {
+      @apply min-h-[44px] min-w-[44px];
+    }
+  }
+}

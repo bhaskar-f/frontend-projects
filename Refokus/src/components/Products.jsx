@@ -105,7 +105,7 @@ export default function Products() {
             y: pos + `rem`,
           }}
           transition={{ ease: [0.22, 1, 0.36, 1], duration: 0.4 }}
-          className="absolute w-[32rem] h-[23rem] left-[44%] rounded-3xl overflow-hidden bg-sky-400"
+          className="absolute w-72 md:w-96 lg:w-[32rem] h-48 md:h-64 lg:h-[23rem] left-1/2 md:left-[44%] rounded-lg md:rounded-3xl overflow-hidden bg-sky-400"
         >
           <motion.div
             animate={{

@@ -31,7 +31,7 @@ export default function Stripes() {
     },
   ];
   return (
-    <div className="w-full flex mt-5">
+    <div className="w-full flex flex-wrap md:flex mt-5">
       {data.map((elem, index) => {
         return <Stripe key={index} val={elem} />;
       })}

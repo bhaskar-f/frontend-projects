@@ -15,16 +15,16 @@ export default function CustomCursor() {
 
   return (
     <>
-      {/* Hide default cursor */}
-      <style>{`body { cursor: none; }`}</style>
+      {/* Hide default cursor on desktop only */}
+      <style>{`@media (hover: hover) { body { cursor: none; } }`}</style>
 
       <motion.div
-        className="fixed top-0 left-0 w-8 h-8 border-2 border-white rounded-full pointer-events-none z-[9999]"
+        className="fixed top-0 left-0 w-6 md:w-8 h-6 md:h-8 border-2 border-white rounded-full pointer-events-none z-[9999] hidden md:block"
         style={{
           backgroundColor: "white",
           mixBlendMode: "difference",
         }}
-        animate={{ x: pos.x - 8, y: pos.y - 8 }}
+        animate={{ x: pos.x - 12, y: pos.y - 12 }}
         transition={{ type: "tween", duration: 0 }}
       />
     </>
